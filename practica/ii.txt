@@ -1,0 +1,23 @@
+1
+
+idioma_corto
+3
+a 4
+b 7
+_ 5
+
+tabla_frec idioma_corto todos
+
+treecode idioma_corto
+
+anadir/modificar idioma_corto
+3
+a 4
+b 3
+d 5
+
+tabla_frec idioma_corto todos
+
+treecode idioma_corto
+
+fin

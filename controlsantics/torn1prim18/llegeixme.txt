@@ -1,0 +1,82 @@
+Aquest document descriu com produir l'executable del programa pro2 i 
+com fer proves amb el codi.
+
+Els fitxers font que us subministrem els podeu veure com un projecte
+de programació amb 3 mòduls: pro2.cc (amb el main), Estudiant (mòdul
+de dades que defineix la classe Estudiant) i Cjt_estudiants (mòdul de
+dades que defineix la classe Cjt_estudiants), amb la particularitat
+que la implementació del mòdul Cjt_estudiants està dividida en dos
+fitxers: Cjt_estudiants.cc i solucio.cc.  Vosaltres heu de produir
+solucio.cc.
+
+
+Com generar l'executable
+========================
+
+Se suposa que treballareu en la mateixa carpeta on descomprimiu el
+fitxer .tar, que conté tots els fitxers que acompanyen l'enunciat.
+
+Per obtenir un executable del programa, podeu compilar en línia de
+comandes mitjançant una sola instrucció:
+
+p2++ -o pro2.exe *.cc
+
+o, si p2++ no està definit, amb la instrucció
+
+g++ -o pro2.exe *.cc -D_GLIBCXX_DEBUG -O2 -Wall -Wextra -Werror -Wno-sign-compare -std=c++11
+
+Aquesta instrucció necessita que estiguin els arxius pro2.cc,
+Estudiant.cc, Estudiant.hh, Cjt_estudiants.hh, Cjt_estudiants.cc i
+solucio.cc a la carpeta on s'executa.
+
+També podeu compilar en dos passos com heu fet a les classes de
+laboratori. 
+
+Pas 1: compileu (produïu els fitxers .o) amb la instrucció
+
+p2++ -c *.cc
+
+o, si p2++ no està definit, amb la instrucció
+
+g++ -c *.cc -D_GLIBCXX_DEBUG -O2 -Wall -Wextra -Werror -Wno-sign-compare -std=c++11
+
+
+Aquesta instrucció necessita els fitxers pro2.cc, Estudiant.cc,
+Estudiant.hh, Cjt_estudiants.hh, Cjt_estudiants.cc i solucio.cc. I
+genera els fitxers pro2.o, Estudiant.o, Cjt_estudiants.o i solucio.o.
+
+
+Pas 2: enllaceu (genereu l'executable amb els .o resultants del pas anterior)
+
+g++ -o pro2.exe *.o
+
+Aquesta instrucció necessita els fitxers pro2.o, Estudiant.o,
+Cjt_estudiants.o i solucio.o. I genera el fitxer executable pro2.exe
+
+
+
+JP públic
+========= 
+
+Primer es llegeix un conjunt d'estudiants. Després es llegeixen les instruccions 
+(nom de la instrucció i dades de la instrucció) i s'acaba amb la instrucció "fi".
+Estudieu amb cura el fitxer pro2.cc per deduir el significat de cada ordre.  Vegeu els 
+fitxers entrada.txt (entrada del joc de proves públic) i sortida_correcta.txt
+(sortida esperada del joc de proves públic).
+
+
+
+Com provar l'executable
+========================
+
+Podeu capturar la sortida del vostre programa amb la instrucció
+
+         ./pro2.exe < entrada.txt > la_teva_sortida.txt
+
+La nostra correcció serà equivalent a executar la instrucció
+
+         diff -bB sortida_correcta.txt la_teva_sortida.txt
+
+El resultat del programa és correcte si la instrucció anterior produeix 0
+diferències.
+

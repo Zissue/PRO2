@@ -1,0 +1,250 @@
+/* 
+
+InsAcademy for GetSimple
+Version:				1.5
+File:					style.css
+Author: 				insraq
+URI: 					http://insraq.me/
+License:				CREATIVE COMMONS Attribution-ShareAlike 3.0
+
+*/
+
+/* Import */
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+@import url("reset.css");
+@import url("text.css");
+@import url("960.css");
+
+
+/* Global Style */
+body {
+    color: #666;
+    font-size: medium;/*13px;*/
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+a {
+    color:#007dcb;/*#A58A67;*/
+    text-decoration: none;
+}
+
+/*
+a:visited{
+		color: #622787;
+}*/
+
+a img {
+    outline: none;
+    border: 0;
+}
+
+a:hover {
+    /*color: #332213;*/
+    text-decoration: underline;
+}
+
+h2 a {
+	color: #303E3B !important;
+}
+
+h1, h2, h3, h4, h2 a {
+    padding: 0;
+    margin: 0;
+    color: #303E3B;
+    font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: x-large;/*22px;*/
+}
+
+h3 {
+    font-size: large;/*19px;*/
+}
+
+h4 {
+    font-size: medium;/*16px;*/
+}
+
+small {
+    font-size: small;
+}
+
+strong {
+    font-weight: bold;
+}
+
+p {
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding-left: 5px;
+    margin-left: 5px;
+    border-left: 3px solid #ccc;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+pre {
+    overflow: auto;
+    /*--If the Code exceeds the width, a scrolling is available--*/
+		overflow-Y: hidden;
+    /*--Hides vertical scroll created by IE--*/
+		padding: 5px;
+
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+		padding-left: 1em;
+		text-indent: -1em;
+}
+
+ul li {
+    margin: 5px 0 5px 20px;
+    list-style: disc url(../images/list-style.png) inside;
+}
+
+li ul {
+	margin-bottom:0px;
+}
+
+p ul {
+	margin-bottom:0px;
+}
+
+table {
+	width: 100%;
+}
+
+.listing tr:hover{
+	background-color:#EEEEEE;
+}
+
+.sidenote {
+	font-size: small;
+	color: #999999;
+}
+
+/* Header */
+.header {
+    height: 80px;
+    position: relative;
+	padding-top: 10px;
+}
+
+.header h1 {
+    line-height: 45px;
+    color: #403E3B;
+	margin: 0px;
+}
+
+.header h1 a, .header h1 a:hover {
+    color: #403E3B;
+}
+
+.header p {
+  line-height: 25px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.toright {
+	text-align: right;
+}
+
+
+/* Navbar */
+.navbar {
+    background: url(../images/navbar_bg.png) repeat;
+    width: 100%;
+    font-size: 17px;
+}
+
+.navbar a {
+    color: #3F3E3A;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar ul {
+    display: block;
+    list-style: none;
+}
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0;
+    line-height: 1.0;
+}
+
+.navbar ul li.current a {
+    text-decoration: underline;
+}
+
+/* Image Banner */
+.imagebanner {
+	margin: 0 auto; 
+	padding: 0;
+	background: #403E3B url(../images/slide1.jpg) no-repeat;
+	background-position:center top;
+	min-height:110px;
+	height: auto !important;
+	height: 110px;
+	min-width:960px;
+	width: 100%;
+}
+
+.content{
+    margin: 10px 0 0px 0;
+}
+
+.footer {
+	border-top: 1px solid #CCCCCC;
+  font-size: 12px;
+  color: #999;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.footer a {
+	color: #5F4E3F;
+}
+
+.logo {
+	padding-top:25px;
+}
+
+/* Pages */
+.page {
+	padding-bottom:50px;
+}
+
+.external {
+	padding-right:15px;
+	background: url(../images/external.png) no-repeat 100% 50%;
+}
