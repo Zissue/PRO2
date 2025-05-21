@@ -12,7 +12,7 @@ The main top-level directories in this repository are organized as follows:
 -   `arbres/`: Exercises and materials related to tree data structures, particularly binary trees.
 -   `conjunts o set/`: Exercises and materials related to set data structures.
 -   `diccionaris o map/`: Exercises and materials related to map or dictionary data structures.
--   `llistes/`: Exercises and materials related to list data structures.
+-   `llistes/`: Exercises and materials related to (linked) list data structures.
 -   `piles_i_cues/`: Exercises and materials related to stack and queue data structures.
 -   `practica/`: Files and materials related to a larger practice assignment or project for the course.
 -   `sessio*/`: Materials for different lab or theory sessions (e.g., `sessio1/`, `sessio2/`, etc.).
