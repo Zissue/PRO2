@@ -4,6 +4,8 @@
 
 This repository contains course materials, exercises, and solutions for the PRO2 (Programming 2) course at UPC (Universitat Politècnica de Catalunya). The course focuses on data structures and algorithms implemented in C++.
 
+**Note:** This repository now excludes build artifacts, compiled files, and generated documentation to keep it clean and lightweight. You'll need to compile and build projects locally.
+
 ## Directory Structure
 
 The main top-level directories in this repository are organized as follows:
@@ -31,6 +33,33 @@ This repository is intended for students of the PRO2 course. Here you can find:
 
 You can clone or download this repository to access the materials locally. Navigate through the directories to find the content relevant to the topic or session you are interested in.
 
+### Building and Compiling
+
+Most exercises and projects include a `Makefile` for compilation. To build a project:
+
+```bash
+cd <project_directory>
+make
+```
+
+To clean build artifacts:
+
+```bash
+make clean
+```
+
+### Generating Documentation
+
+Some projects include Doxygen configuration files (`Doxyfile`). To generate documentation:
+
+```bash
+doxygen Doxyfile
+```
+
+This will create `html/` and `latex/` directories with the generated documentation.
+
+**Note:** Generated documentation is not tracked in this repository. You need to generate it locally.
+
 ## Course Information
 
 For official and up-to-date information about the PRO2 course, please visit the official course website:
@@ -39,3 +68,13 @@ For official and up-to-date information about the PRO2 course, please visit the 
 ## Disclaimer
 
 Please note that the materials in this repository might be from a specific academic year. While they can be very helpful for learning and practice, some content might be outdated or not perfectly aligned with the current syllabus of the PRO2 course. Always refer to the official course website and materials provided by your instructors for the most current information.
+
+## Repository Maintenance
+
+This repository has been organized to exclude:
+- Compiled object files (*.o, *.exe, *.x)
+- Build artifacts (*.tar, *.zip)
+- Generated documentation (html/, latex/ directories)
+- IDE-specific files
+
+These files should be generated locally as needed. See the "Building and Compiling" section above for instructions.
