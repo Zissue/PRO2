@@ -1,0 +1,59 @@
+# C++ compiled files
+*.o
+*.obj
+*.exe
+*.out
+*.x
+*.gch
+*.pch
+
+# Archives and compressed files
+*.tar
+*.zip
+*.gz
+*.bz2
+*.7z
+*.rar
+
+# Generated documentation (Doxygen)
+html/
+latex/
+*/html/
+*/latex/
+**/html/
+**/latex/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
